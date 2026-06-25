@@ -3,138 +3,292 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Research Hub | Islamic Social Finance & Development</title>
-    <meta name="description" content="Research Hub focusing on Islamic Social Finance, Zakat Ecosystem, and National Development Policy in Indonesia.">
+    <title>Research Hub | Islamic Social Finance & Development Studies</title>
+    <meta name="description" content="Research Hub is a leading research centre specialising in Islamic Social Finance, Zakat Ecosystem Development, and Evidence-Based Policy for sustainable national progress in Indonesia.">
+    <meta property="og:title" content="Research Hub | Islamic Social Finance & Development Studies">
+    <meta property="og:description" content="Driving impact through strategic research in zakat, social finance, and national policy.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="background-effects">
-        <div class="glow-orb orb-1"></div>
-        <div class="glow-orb orb-2"></div>
-    </div>
 
-    <nav class="navbar">
+    <!-- NAVBAR -->
+    <nav class="navbar" id="navbar">
         <div class="container nav-container">
-            <a href="#" class="logo">Research<span>Hub.</span></a>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#portfolio">Research Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
+            <a href="#" class="logo" id="logo-link">
+                Research<span>Hub</span><span class="logo-dot">.</span>
+            </a>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#about" id="nav-about">About</a></li>
+                <li><a href="#focus" id="nav-focus">Focus Areas</a></li>
+                <li><a href="#portfolio" id="nav-portfolio">Research Portfolio</a></li>
+                <li><a href="#contact" id="nav-contact" class="nav-cta">Collaborate</a></li>
             </ul>
+            <button class="hamburger" id="hamburger-btn" aria-label="Open Menu">
+                <span></span><span></span><span></span>
+            </button>
         </div>
     </nav>
 
-    <header class="hero">
+    <!-- HERO SECTION -->
+    <header class="hero" id="home">
         <div class="container hero-container">
             <div class="hero-content">
-                <span class="badge">Advancing Knowledge</span>
-                <h1 class="hero-title">Driving Impact Through <span>Strategic Research</span></h1>
-                <p class="hero-subtitle">We specialise in Islamic Social Finance, Zakat Ecosystem Development, and Evidence-Based Policy for sustainable national progress.</p>
+                <span class="hero-badge" id="hero-badge">Forum Zakat Research Division</span>
+                <h1 class="hero-title">Driving Impact Through <em>Strategic Research</em></h1>
+                <p class="hero-subtitle">We specialise in Islamic Social Finance, Zakat Ecosystem Development, and Evidence-Based Policy — contributing to Indonesia's sustainable national progress.</p>
                 <div class="hero-actions">
-                    <a href="#portfolio" class="btn btn-primary">Explore Portfolio</a>
-                    <a href="#contact" class="btn btn-secondary">Collaborate</a>
+                    <a href="#portfolio" class="btn btn-primary" id="hero-cta-portfolio">Explore Portfolio</a>
+                    <a href="#contact" class="btn btn-outline" id="hero-cta-collaborate">Let's Collaborate</a>
                 </div>
             </div>
+            <div class="hero-image">
+                <img src="hero-visual.png" alt="Research team collaborating around a map of Indonesia with data charts" id="hero-img">
+            </div>
+        </div>
+        <div class="hero-wave">
+            <svg viewBox="0 0 1440 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0,40 C360,80 1080,0 1440,40 L1440,80 L0,80 Z" fill="#F3F4F6"/>
+            </svg>
         </div>
     </header>
 
-    <section id="portfolio" class="portfolio-section">
-        <div class="container">
-            <div class="section-header">
-                <h2>Our Research Portfolio</h2>
-                <p>Discover our ongoing and completed projects driving innovation in social finance and policy.</p>
+    <!-- STATISTICS STRIP -->
+    <section class="stats-strip" id="stats">
+        <div class="container stats-container">
+            <div class="stat-item">
+                <span class="stat-number" data-target="9" id="stat-projects">0</span>
+                <span class="stat-label">Research Projects</span>
             </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+                <span class="stat-number" data-target="5" id="stat-partners">0</span>
+                <span class="stat-label">Collaboration Partners</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+                <span class="stat-number" data-target="2" id="stat-ongoing">0</span>
+                <span class="stat-label">Ongoing Studies</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+                <span class="stat-number" id="stat-year">2023</span>
+                <span class="stat-label">Since Year</span>
+            </div>
+        </div>
+    </section>
 
-            <div class="portfolio-grid">
-                <!-- Project 1 -->
-                <article class="project-card reveal">
-                    <div class="card-status status-ongoing">Ongoing • 2026</div>
-                    <h3>Utilisation of Post-Flood Sludge in Aceh-Sumatra</h3>
-                    <div class="tags">
-                        <span class="tag">Environmental Sustainability</span>
-                        <span class="tag">Disaster Recovery</span>
+    <!-- FOCUS AREAS -->
+    <section class="focus-section" id="focus">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">What We Do</span>
+                <h2>Our Core Research Areas</h2>
+                <p>We bridge evidence and practice across three major domains of social impact research.</p>
+            </div>
+            <div class="focus-grid">
+                <article class="focus-card reveal" id="focus-social-finance">
+                    <div class="focus-icon">
+                        <img src="icon-social-finance.png" alt="Islamic Social Finance Icon">
                     </div>
-                    <p>Investigating the feasibility of repurposing post-flood sludge as raw material for brick production. Developing a robust M&E framework for circular-economy applications in disaster recovery.</p>
-                    <div class="partners"><strong>Partners:</strong> BRIN, NH, Syiah Kuala University</div>
+                    <h3>Islamic Social Finance</h3>
+                    <p>Researching zakat ecosystems, philanthropic dynamics, and institutional development to strengthen Indonesia's Islamic social finance sector.</p>
+                    <span class="focus-tag green">Zakat · Waqf · Philanthropy</span>
                 </article>
-
-                <!-- Project 2 -->
-                <article class="project-card reveal">
-                    <div class="card-status status-completed">Completed • 2025</div>
-                    <h3>Zakat Outlook 2026: Mapping Indonesia's Zakat Ecosystem</h3>
-                    <div class="tags">
-                        <span class="tag">Islamic Social Finance</span>
-                        <span class="tag">Policy Research</span>
+                <article class="focus-card reveal" id="focus-policy">
+                    <div class="focus-icon">
+                        <img src="icon-policy.png" alt="Policy Research Icon">
                     </div>
-                    <p>Comprehensive outlook document mapping the trajectory of Indonesia's zakat ecosystem. Analyses behavioural patterns and provides evidence-based strategies for optimising collection and distribution.</p>
+                    <h3>Policy & Development Research</h3>
+                    <p>Producing evidence-based policy briefs and strategic blueprints that inform national policymakers and institutional stakeholders.</p>
+                    <span class="focus-tag red">Policy · Strategy · Planning</span>
                 </article>
-
-                <!-- Project 3 -->
-                <article class="project-card reveal">
-                    <div class="card-status status-completed">Completed • 2025</div>
-                    <h3>Indonesia Zakat Playbook</h3>
-                    <div class="tags">
-                        <span class="tag">Institutional Development</span>
-                        <span class="tag">Organisational Studies</span>
+                <article class="focus-card reveal" id="focus-environment">
+                    <div class="focus-icon">
+                        <img src="icon-environment.png" alt="Environmental Studies Icon">
                     </div>
-                    <p>Analytical framework for the institutionalisation of zakat across legal, theological, behavioural, and organisational dimensions in Indonesia.</p>
-                    <div class="partners"><strong>Partners:</strong> BRIN, The Voyage (HK)</div>
-                </article>
-
-                <!-- Project 4 -->
-                <article class="project-card reveal">
-                    <div class="card-status status-completed">Completed • 2025</div>
-                    <h3>Collaborative Frameworks with Ministry of Manpower</h3>
-                    <div class="tags">
-                        <span class="tag">Labour Policy</span>
-                        <span class="tag">Social Protection</span>
-                    </div>
-                    <p>Policy brief providing evidence-informed input on collaborative frameworks between the Ministry of Manpower and zakat organisations to address labour market challenges.</p>
-                </article>
-                
-                <!-- Project 5 -->
-                <article class="project-card reveal">
-                    <div class="card-status status-completed">Completed • 2024</div>
-                    <h3>Integration of Social Security & Zakat Programs</h3>
-                    <div class="tags">
-                        <span class="tag">Social Protection</span>
-                        <span class="tag">Development Policy</span>
-                    </div>
-                    <p>Systematic analysis of programmatic overlap and opportunities for institutional integration between formal social security and Islamic social finance mechanisms.</p>
-                    <div class="partners"><strong>Partners:</strong> KNEKS</div>
-                </article>
-
-                <!-- Project 6 -->
-                <article class="project-card reveal">
-                    <div class="card-status status-completed">Completed • 2024</div>
-                    <h3>Zakat Movement for Indonesia's Golden Era 2045</h3>
-                    <div class="tags">
-                        <span class="tag">Strategic Planning</span>
-                        <span class="tag">National Policy</span>
-                    </div>
-                    <p>Strategic blueprint outlining long-term milestones and actionable strategies to guide the development of Indonesia's national zakat ecosystem towards 2045.</p>
+                    <h3>Environmental & Social Studies</h3>
+                    <p>Investigating the intersections of disaster recovery, environmental sustainability, and community resilience through rigorous M&E frameworks.</p>
+                    <span class="focus-tag teal">Sustainability · Disaster · M&E</span>
                 </article>
             </div>
         </div>
     </section>
 
-    <footer class="footer" id="contact">
-        <div class="container footer-content">
-            <div class="footer-brand">
-                <a href="#" class="logo">Research<span>Hub.</span></a>
-                <p>Advancing knowledge through strategic research in Islamic Social Finance and National Development.</p>
+    <!-- ABOUT SECTION -->
+    <section class="about-section" id="about">
+        <div class="container about-container">
+            <div class="about-image reveal">
+                <img src="about-visual.png" alt="Research Hub team collaborating in a modern office setting">
             </div>
-            <div class="footer-contact">
-                <h4>Let's Collaborate</h4>
-                <p>Interested in our research or want to partner on future projects?</p>
-                <a href="mailto:contact@forumzakat.org" class="btn btn-primary mt-4">Contact Us</a>
+            <div class="about-content reveal">
+                <span class="section-tag">Who We Are</span>
+                <h2>A Research Hub Committed to Evidence & Impact</h2>
+                <p>We are the research division of <strong>Forum Zakat</strong>, dedicated to producing rigorous, contextually relevant research that drives meaningful change in Indonesia's social finance landscape.</p>
+                <p>Our work spans systematic literature reviews, impact measurement instrument development, comparative analyses, and strategic blueprint documents — all guided by a commitment to bridging academic rigor with real-world applicability.</p>
+                <div class="about-partners">
+                    <span class="partner-label">Trusted by:</span>
+                    <div class="partner-list">
+                        <span class="partner-badge">BRIN</span>
+                        <span class="partner-badge">KNEKS</span>
+                        <span class="partner-badge">Syiah Kuala University</span>
+                        <span class="partner-badge">The Voyage (HK)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PORTFOLIO SECTION -->
+    <section class="portfolio-section" id="portfolio">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">Our Work</span>
+                <h2>Research Portfolio</h2>
+                <p>Explore our ongoing and completed research projects across diverse domains of social impact.</p>
+            </div>
+
+            <!-- Filter Buttons -->
+            <div class="filter-bar reveal" id="filter-bar">
+                <button class="filter-btn active" data-filter="all" id="filter-all">All Projects</button>
+                <button class="filter-btn" data-filter="completed" id="filter-completed">Completed</button>
+                <button class="filter-btn" data-filter="ongoing" id="filter-ongoing">Ongoing</button>
+            </div>
+
+            <div class="portfolio-grid" id="portfolio-grid">
+
+                <!-- Project 1: Ongoing -->
+                <article class="project-card reveal" data-status="ongoing" id="project-1">
+                    <div class="card-header">
+                        <span class="card-status ongoing">● Ongoing</span>
+                        <span class="card-year">2026</span>
+                    </div>
+                    <h3>Utilisation of Post-Flood Sludge in Aceh-Sumatra</h3>
+                    <div class="card-tags">
+                        <span class="tag">Environmental Sustainability</span>
+                        <span class="tag">Disaster Recovery</span>
+                        <span class="tag">Social-Environmental M&E</span>
+                    </div>
+                    <p>Investigating the feasibility of repurposing post-flood sludge as raw material for brick production. Developing a robust M&E framework for circular-economy applications within disaster-recovery contexts.</p>
+                    <div class="card-footer">
+                        <span class="card-partners">🤝 BRIN · NH · Syiah Kuala University</span>
+                    </div>
+                </article>
+
+                <!-- Project 2: Completed -->
+                <article class="project-card reveal" data-status="completed" id="project-2">
+                    <div class="card-header">
+                        <span class="card-status completed">✓ Completed</span>
+                        <span class="card-year">2025</span>
+                    </div>
+                    <h3>Zakat Outlook 2026: Mapping Indonesia's Zakat Ecosystem</h3>
+                    <div class="card-tags">
+                        <span class="tag">Islamic Social Finance</span>
+                        <span class="tag">Philanthropic Studies</span>
+                        <span class="tag">Policy Research</span>
+                    </div>
+                    <p>A comprehensive outlook document mapping the current state and trajectory of Indonesia's zakat ecosystem, with evidence-based strategic recommendations through 2030.</p>
+                </article>
+
+                <!-- Project 3: Completed -->
+                <article class="project-card reveal" data-status="completed" id="project-3">
+                    <div class="card-header">
+                        <span class="card-status completed">✓ Completed</span>
+                        <span class="card-year">2025</span>
+                    </div>
+                    <h3>Indonesia Zakat Playbook</h3>
+                    <div class="card-tags">
+                        <span class="tag">Islamic Social Finance</span>
+                        <span class="tag">Institutional Development</span>
+                        <span class="tag">Organisational Studies</span>
+                    </div>
+                    <p>An analytical framework for the institutionalisation of zakat across four dimensions: legal frameworks, theological foundations, behavioural dynamics, and organisational structures.</p>
+                    <div class="card-footer">
+                        <span class="card-partners">🤝 BRIN · The Voyage (HK)</span>
+                    </div>
+                </article>
+
+                <!-- Project 4: Completed -->
+                <article class="project-card reveal" data-status="completed" id="project-4">
+                    <div class="card-header">
+                        <span class="card-status completed">✓ Completed</span>
+                        <span class="card-year">2025</span>
+                    </div>
+                    <h3>Collaborative Frameworks: Ministry of Manpower & Zakat Organisations</h3>
+                    <div class="card-tags">
+                        <span class="tag">Labour Policy</span>
+                        <span class="tag">Islamic Social Finance</span>
+                        <span class="tag">Social Protection</span>
+                    </div>
+                    <p>Policy brief identifying strategic synergies between the Ministry of Manpower and zakat organisations to address labour market challenges through Islamic social finance interventions.</p>
+                </article>
+
+                <!-- Project 5: Completed -->
+                <article class="project-card reveal" data-status="completed" id="project-5">
+                    <div class="card-header">
+                        <span class="card-status completed">✓ Completed</span>
+                        <span class="card-year">2024</span>
+                    </div>
+                    <h3>Integration of Social Security Systems & Zakat Programs</h3>
+                    <div class="card-tags">
+                        <span class="tag">Social Protection</span>
+                        <span class="tag">Islamic Social Finance</span>
+                        <span class="tag">Development Policy</span>
+                    </div>
+                    <p>Systematic analysis of programmatic overlap between Indonesia's social security system and zakat initiatives, identifying opportunities for institutional integration to enhance development impact.</p>
+                    <div class="card-footer">
+                        <span class="card-partners">🤝 KNEKS</span>
+                    </div>
+                </article>
+
+                <!-- Project 6: Completed -->
+                <article class="project-card reveal" data-status="completed" id="project-6">
+                    <div class="card-header">
+                        <span class="card-status completed">✓ Completed</span>
+                        <span class="card-year">2024</span>
+                    </div>
+                    <h3>Zakat Movement for Indonesia's Golden Era 2045</h3>
+                    <div class="card-tags">
+                        <span class="tag">Islamic Social Finance</span>
+                        <span class="tag">Strategic Planning</span>
+                        <span class="tag">National Development Policy</span>
+                    </div>
+                    <p>A strategic blueprint document outlining long-term milestones and actionable strategies to guide the development of Indonesia's national zakat ecosystem towards 2045. Adopted by multiple stakeholders as a reference framework.</p>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER / CONTACT -->
+    <footer class="footer" id="contact">
+        <div class="footer-top">
+            <div class="container footer-top-container">
+                <div class="footer-brand">
+                    <a href="#" class="logo" id="footer-logo">Research<span>Hub</span><span class="logo-dot">.</span></a>
+                    <p>Advancing knowledge through strategic, evidence-based research in Islamic Social Finance and National Development.</p>
+                </div>
+                <div class="footer-nav">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="#about" id="footer-nav-about">About</a></li>
+                        <li><a href="#focus" id="footer-nav-focus">Focus Areas</a></li>
+                        <li><a href="#portfolio" id="footer-nav-portfolio">Portfolio</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact-block">
+                    <h4>Collaborate With Us</h4>
+                    <p>Have a project or research idea? We'd love to hear from you.</p>
+                    <a href="mailto:research@forumzakat.org" class="btn btn-primary" id="footer-email-btn">research@forumzakat.org</a>
+                </div>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2026 Research Hub. All rights reserved.</p>
+            <div class="container">
+                <p>&copy; 2026 Research Hub — Forum Zakat. All rights reserved.</p>
+            </div>
         </div>
     </footer>
 
